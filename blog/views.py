@@ -22,3 +22,6 @@ def single_post_page(request,value):
             'post':post,
         }
     ) 
+
+def shl_page(request):
+    return render(request,'blog/shl/shl.html',)

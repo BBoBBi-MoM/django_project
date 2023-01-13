@@ -2,16 +2,126 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&family=Oswald:wght@500&family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
         <title>Blog</title>
+        <style>
+            body {
+                margin: 0;
+              }
+
+              .menu-bar {
+                position: fixed;
+                border: 0;
+                background-color: #2B3856;
+                display: block;
+                width: 200px;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              
+              .index {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+              }
+              /* 목차 */
+              .index h3 {
+                color: white;
+                opacity: 0.7;
+                text-decoration: none;
+                cursor: pointer;
+              }
+              /* 목차 각 항목 반응형 커서 */
+              .index h3:hover {
+                font-size: 1.1em;
+                opacity: 1;
+                text-shadow: 0.7px 0.7px 0.7px #000;
+              }
+              section {
+                margin-left: 260px;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              }
+              p {
+                margin: 0;
+              }
+              
+              
+              /* ABOUT part*/
+              
+              .name {
+                font-size: 65px;
+                font-weight: 900;
+                font-family: 'Oswald', sans-serif;
+              }
+              .contacts {
+                font-size: 15px;
+                opacity: 0.5;
+                font-family: 'Roboto Mono', monospace;
+                font-style: italic;
+              }
+              .main-introduction {
+                font-size: 17px;
+                font-family: 'Noto Sans KR', sans-serif;
+                opacity: 0.8;
+              }
+        </style>
     </head>
     <body>
-        <h1>Blog</h1>
-        {% for p in posts %}
-        <hr/>
-        <h2> <a href="{{ p.get_absolute_url }}"> {{ p.title }} </a></h2>
-        <h2>{{ p.title }}</h2>
-        <h4>{{ p.created_at }}</h4>
-        <p>{{ p.content }}</p>
-        {% endfor %}
+        <header>
+        </header>
+          <nav class="menu-bar">
+            <div class = "index">
+              <h3 class="click">FIRST PROFILE</h3>
+              <h3 class="click">SECOND PROFILE</h3>
+              <h3 class="click">THIRD PROFILE</h3>
+              <h3 class="click">FORTH PROFILE</h3>
+              <h3 class="click">FIFTH PROFILE</h3>
+            </div>
+          </nav>
+        
+          {% for p in posts %}
+            <section class="about">
+                <header class="name">
+                <p><span style="color: #2B3856;">[{{p.pk}}]{{p.title}}</span></p>
+                </header>
+                <br><br>
+                <article class="main-introduction">
+                <p>{{p.content}}</p>
+                </article>
+                <br><br>
+            </section>
+          {% endfor %}
+        <script>
+            const clicks = document.querySelectorAll(".click")
+            const sections = document.querySelectorAll("section")
+            const firstTop = sections[0].offsetTop
+            const secondTop = sections[1].offsetTop
+            const thirdTop = sections[2].offsetTop
+            const fourthTop = sections[3].offsetTop
+            const fifthTop = sections[4].offsetTop
+            clicks[0].onclick = function() {
+            window.scroll({top: firstTop, behavior: 'smooth'})
+            }
+            clicks[1].onclick = function() {
+            window.scroll({top: secondTop, behavior: 'smooth'})
+            }
+            clicks[2].onclick = function() {
+            window.scroll({top: thirdTop, behavior: 'smooth'})
+            }
+            clicks[3].onclick = function() {
+            window.scroll({top: fourthTop, behavior: 'smooth'})
+            }
+            clicks[4].onclick = function() {
+            window.scroll({top: fifthTop, behavior: 'smooth'})
+            }
+        </script>
     </body>
 </html>
