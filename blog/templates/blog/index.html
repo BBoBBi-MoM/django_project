@@ -57,7 +57,7 @@
               /* ABOUT part*/
               
               .name {
-                font-size: 65px;
+                font-size: 50px;
                 font-weight: 900;
                 font-family: 'Oswald', sans-serif;
               }
@@ -90,13 +90,14 @@
           {% for p in posts %}
             <section class="about">
                 <header class="name">
-                <p><span style="color: #2B3856;">[{{p.pk}}]{{p.title}}</span></p>
+                <p><span style="color: #2B3856;">{{p.title}}</span></p>
                 </header>
                 <br><br>
                 <article class="main-introduction">
                 <p>{{p.content}}</p>
                 </article>
                 <br><br>
+                <a href={{p.get_absolute_url}}>클릭!</a>
             </section>
           {% endfor %}
         <script>
