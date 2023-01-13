@@ -30,13 +30,19 @@ def kdw_page(request):
     return render(request,'blog/kdw/frame.html')
 
 def kdh_page(request):
-    return render(request,'blog/kdh/')
+    return render(request,'blog/kdh/index.html')
 
 def ksm_page(request):
-    return render(request,'blog/ksm/')
+    return render(request,'blog/ksm/index.html')
 
 def lhw_page(request):
-    return render(request,'blog/lhw/')
+    return render(request,'blog/lhw/lhw.html/hw.html')
 
 def game_page(request):
     return render(request,'blog/shl/game.html')
+
+def future(request):
+    return render(request,'blog/kdh/future.html')
+
+def about(request):
+    return render(request,'blog/kdh/about.html')
