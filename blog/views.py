@@ -27,7 +27,11 @@ def shl_page(request):
     return render(request,'blog/shl/shl.html',)
 
 def kdw_page(request):
-    return render(request,'blog/kdw/frame.html')
+    return render(request,'blog/kdw/profile.html')
+def kdw_page1(request):
+    return render(request,'blog/kdw/interests.html')
+def kdw_page2(request):
+    return render(request,'blog/kdw/study.html')
 
 def kdh_page(request):
     return render(request,'blog/kdh/index.html')
