@@ -2,7 +2,80 @@
 <html >
     <head>
         <title>##welcome##</title>
-        <link href="./newpro.css" rel="stylesheet" type ='text/css'>
+        <style>
+            /*@import url(//fonts.googleapis.com/earlyaccess/hannari.css);*/
+#button_first button{background-color: rgb(98, 187, 25);  /* div 에 button을 추가 해서 버튼으로 만들수 있다*/
+    width : 130px ; 
+    height : 30px ; 
+    }
+
+#button_first button:hover{  color:white;
+    background-color: skyblue} 
+#movetop button{background-color: rgba(155, 0, 0, 0); border-color: rgba(240, 248, 255, 0); /* div 에 button을 추가 해서 버튼으로 만들수 있다*/
+        width : 30px ; 
+        height : 30px ;
+        
+        }
+
+#google button{ width : 10px ; height: 10px; background-color: rgb(99, 139, 99);}
+#button_one{border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+#button_two{border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px; }  
+#button_three{border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px; }         
+#backg{background-color: rgb(120, 153, 29);
+margin-bottom: 800px;}
+#aa{top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -10px; width : 190px ; 
+    height : 220px ;}
+#pic_out{background-color: coral; width : 200px ; 
+    height : 230px ;margin-left : 40px;}
+
+#listt{}
+#box_1{ width : 200px ; float: left; margin-left: 40px;
+    height : 260px;background-color: rgb(25, 66, 82);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;}
+#box_2{width : 200px ; float: left; margin-left: 40px;
+    height : 260px;background-color: rgb(25, 66, 82);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;}
+#box_3{width : 200px ; float: left; margin-left: 40px;
+    height : 260px;background-color: rgb(25, 66, 82); 
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;}
+#btn-moveTop{ margin-left: 40px ;
+    } 
+.imaga{border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;}
+#box_4{ width : 200px ; float: left; margin-left: 40px;
+        height : 260px;background-color: rgb(25, 66, 82);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;}
+#box_5{width : 200px ; float: left; margin-left: 40px;
+        height : 260px;background-color: rgb(25, 66, 82);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;}
+#box_6{width : 200px ; float: left; margin-left: 40px;
+        height : 260px;background-color: rgb(25, 66, 82); 
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;}
+.majorr button {background-color: rgb(98, 187, 25); 
+    width : 130px ; 
+    height : 30px ; }
+.majorr button:hover {background-color: rgb(26, 37, 78); 
+        width : 130px ; 
+        height : 30px ; }
+        </style>
         <script href="./newnew.js"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +91,7 @@
         </div>
         <hr>
         <h1 font = "san">Hello</h1><br>
-        <div id = 'pic_out'><img src = "./DDAE87E0-774F-41B5-B5C9-4333B2EECAB9.JPG" id = 'aa'></div><br>
+        <div id = 'pic_out'><img src = "https://github.com/BBoBBi-MoM/django_project/blob/main/blog/templates/blog/ksm/DDAE87E0-774F-41B5-B5C9-4333B2EECAB9.JPG?raw=true" id = 'aa'></div><br>
         <h3 font = "san">about me..</h3>
         <ul id = "listt">
             <li>1997년 10월 27일생</li>
@@ -29,16 +102,16 @@
             
         </ul>
         <h2>주력 분야</h2>
-        <div id = box_1><image src = "./civilengineerenvironment-Large-1.jpeg" width = 200px height = 230px class = " imaga"></image><div class = majorr ><button onclick = "location.href = 'https://ko.wikipedia.org/wiki/%ED%86%A0%EB%AA%A9%EA%B3%B5%ED%95%99'">Civil engineer</button></div></div>
-        <div id = box_2><image src = "./1_E1haIGB9K4K89PsFZgm-pw.jpeg"  width = 200px height = 230px class = " imaga"></image><div class = majorr><button onclick = "location.href = 'https://en.wikipedia.org/wiki/Data_science">Data science</button></div></div>
-        <div id = box_3><image src = "./what-is-an-algorithm-featured.png"  width = 200px height = 230px class = " imaga"></image><div class = majorr><button onclick = "location.href = 'https://en.wikipedia.org/wiki/Algorithm" >algorithm coding</button></div></div>
+        <div id = box_1><image src = "https://github.com/BBoBBi-MoM/django_project/blob/main/blog/templates/blog/ksm/civilengineerenvironment-Large-1.jpeg?raw=true" width = 200px height = 230px class = " imaga"></image><div class = majorr ><button onclick = "location.href = 'https://ko.wikipedia.org/wiki/%ED%86%A0%EB%AA%A9%EA%B3%B5%ED%95%99'">Civil engineer</button></div></div>
+        <div id = box_2><image src = "https://github.com/BBoBBi-MoM/django_project/blob/main/blog/templates/blog/ksm/1_E1haIGB9K4K89PsFZgm-pw.jpeg?raw=true"  width = 200px height = 230px class = " imaga"></image><div class = majorr><button onclick = "location.href = 'https://en.wikipedia.org/wiki/Data_science">Data science</button></div></div>
+        <div id = box_3><image src = "https://github.com/BBoBBi-MoM/django_project/blob/main/blog/templates/blog/ksm/what-is-an-algorithm-featured.png?raw=true"  width = 200px height = 230px class = " imaga"></image><div class = majorr><button onclick = "location.href = 'https://en.wikipedia.org/wiki/Algorithm" >algorithm coding</button></div></div>
         <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
        
         <h2> 향후 도전 방향..</h2>
         <br>
-        <div id = box_4><image src = "./image.jpg" width = 200px height = 230px class = " imaga"></image><div class = majorr ><button onclick = "location.href = 'https://en.wikipedia.org/wiki/Civil_engineer'">Front End</button></div></div>
-        <div id = box_5><image src = "./free-icon-database-149206.png" width = 200px height = 230px class = " imaga"></image><div class = majorr ><button onclick = "location.href = 'https://en.wikipedia.org/wiki/Civil_engineer'">Data Base</button></div></div>
-        <div id = box_6><image src = "./DHCOM_Computer_On_Module_-_AM35x.jpg" width = 200px height = 230px class = " imaga"></image><div class = majorr ><button onclick = "location.href = 'https://en.wikipedia.org/wiki/Civil_engineer'">Embedded System</button></div></div>
+        <div id = box_4><image src = "https://github.com/BBoBBi-MoM/django_project/blob/main/blog/templates/blog/ksm/image.jpg?raw=true" width = 200px height = 230px class = " imaga"></image><div class = majorr ><button onclick = "location.href = 'https://en.wikipedia.org/wiki/Civil_engineer'">Front End</button></div></div>
+        <div id = box_5><image src = "https://github.com/BBoBBi-MoM/django_project/blob/main/blog/templates/blog/ksm/free-icon-database-149206.png?raw=true" width = 200px height = 230px class = " imaga"></image><div class = majorr ><button onclick = "location.href = 'https://en.wikipedia.org/wiki/Civil_engineer'">Data Base</button></div></div>
+        <div id = box_6><image src = "https://github.com/BBoBBi-MoM/django_project/blob/main/blog/templates/blog/ksm/DHCOM_Computer_On_Module_-_AM35x.jpg?raw=true" width = 200px height = 230px class = " imaga"></image><div class = majorr ><button onclick = "location.href = 'https://en.wikipedia.org/wiki/Civil_engineer'">Embedded System</button></div></div>
         
         <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
         
