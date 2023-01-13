@@ -2,12 +2,103 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&family=Oswald:wght@500&family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title> HoLim's profile </title>
+    <style>
+      body {
+        margin: 0;
+      }
+    
+      .img {
+        justify-content: center;
+      }
+      #porfile-img {
+      width: 150px;
+      height: 150px;
+      border: 1px solid #2B3856;
+      transform: scale(1); /* 이미지 사이즈 고정 */
+      border-radius: 70%
+      } 
+    
+      .menu-bar {
+        position: fixed;
+        border: 0;
+        background-color: #2B3856;
+        display: block;
+        width: 200px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .index {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      /* 목차 */
+      .index h3 {
+        color: white;
+        opacity: 0.7;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      /* 목차 각 항목 반응형 커서 */
+      .index h3:hover {
+        font-size: 1.1em;
+        opacity: 1;
+        text-shadow: 0.7px 0.7px 0.7px #000;
+      }
+      section {
+        margin-left: 260px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      p {
+        margin: 0;
+      }
+      
+    
+      
+      .name {
+        font-size: 65px;
+        font-weight: 900;
+        font-family: 'Oswald', sans-serif;
+      }
+      .contacts {
+        font-size: 18px;
+        opacity: 0.5;
+        font-family: 'Roboto Mono', monospace;
+        font-style: italic;
+      }
+      .main-introduction {
+        font-size: 17px;
+        font-family: 'Noto Sans KR', sans-serif;
+        opacity: 0.8;
+      }
+    
+      .fa-brands {
+        color: black;
+        opacity: 0.4
+      }
+      .fa-solid {
+        color: black;
+        opacity: 0.4
+      }
+      .sns-pictogram i {
+        margin-right: 40px;
+      }
+    
+      footer i:hover {
+        transform: translate(0, -3px);
+      }
+    </style>
   </head>
 
 
@@ -17,12 +108,11 @@
       <nav class="menu-bar">
         <div class = "index">
           <div class = "img">
-            <img id="porfile-img" src ="images/profile.jpg">
+            <img id="porfile-img" src ="https://github.com/BBoBBi-MoM/django_project/blob/main/blog/templates/blog/shl/images/profile.jpg?raw=true">
           </div>
           <a href='http://127.0.0.1:8000/blog/'><h3>HOME</h3></a>  
-          <!-- 공용홈페이지 링크 추가 -->
           <h3 class="click">ABOUT ME</h3>
-          <a href='game.html' target="_blank"><h3>MINI GAME</h3></a> 
+          <a href='game' target="_blank"><h3>MINI GAME</h3></a> 
         </div>
       </nav>
 

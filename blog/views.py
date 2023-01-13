@@ -25,3 +25,6 @@ def single_post_page(request,value):
 
 def shl_page(request):
     return render(request,'blog/shl/shl.html',)
+
+def game_page(request):
+    return render(request,'blog/shl/game.html',)
