@@ -84,6 +84,7 @@
               <h3 class="click">THIRD PROFILE</h3>
               <h3 class="click">FORTH PROFILE</h3>
               <h3 class="click">FIFTH PROFILE</h3>
+              <h3 class="click">PROCESS</h3>
             </div>
           </nav>
         
@@ -100,6 +101,12 @@
                 <a href={{p.get_absolute_url}}>클릭!</a>
             </section>
           {% endfor %}
+            <section>
+              <img src='https://github.com/BBoBBi-MoM/django_project/blob/main/blog/templates/blog/images/KakaoTalk_20230113_140345617.jpg?raw=true'
+               width=1000, height=563>
+              <img src='https://github.com/BBoBBi-MoM/django_project/blob/main/blog/templates/blog/images/KakaoTalk_20230113_140355349.jpg?raw=true'
+              width=1000, height=563>
+            </section>
         <script>
             const clicks = document.querySelectorAll(".click")
             const sections = document.querySelectorAll("section")
@@ -108,6 +115,7 @@
             const thirdTop = sections[2].offsetTop
             const fourthTop = sections[3].offsetTop
             const fifthTop = sections[4].offsetTop
+            const sixthTop = sections[5].offsetTop
             clicks[0].onclick = function() {
             window.scroll({top: firstTop, behavior: 'smooth'})
             }
@@ -122,6 +130,9 @@
             }
             clicks[4].onclick = function() {
             window.scroll({top: fifthTop, behavior: 'smooth'})
+            }
+            clicks[5].onclick = function() {
+            window.scroll({top: sixthTop, behavior: 'smooth'})
             }
         </script>
     </body>
